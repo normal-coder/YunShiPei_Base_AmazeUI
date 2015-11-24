@@ -1,0 +1,12 @@
+[ 2015-08-09T15:55:51+08:00 ] 127.0.0.1 /amazeUI/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000693s ]
+ERR: 无法加载模块:Index
+
+[ 2015-08-09T15:56:16+08:00 ] 127.0.0.1 /amazeUI/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+ERR: 无法加载模块:Index
+

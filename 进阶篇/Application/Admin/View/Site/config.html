@@ -1,0 +1,73 @@
+<extend name="Public:common" />
+<block name="content">
+	<div class="am-cf am-padding">
+		<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">站点信息</strong> / <small>站点配置</small></div>
+	</div>
+	<form class="am-form" action="{: U('config') }" method="post">
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				站点名称
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="sitename" value="{: $sitemess['sitename']}">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">*必填，不可重复</div>
+		</div>
+
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				站点描述
+			</div>
+			<div class="am-u-sm-8 am-u-md-4 am-u-end col-end">
+				<input type="text" class="am-input-sm" name="discript" value="{: $sitemess['discript'] }">
+			</div>
+		</div>
+
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				关键字
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="keywords" value="{: $sitemess['keywords'] }">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">使用英文半角逗号隔开</div>
+		</div>
+
+
+
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				站点版权
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="copyright" value="{: $sitemess['copyright'] }">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				ICP备案
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="icp" value="{: $sitemess['icp'] }">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+
+
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">　
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<button type="submit" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+		<div class="am-g am-margin-top">
+			<p>　</p>
+			<p>　</p>
+			<p>　</p>
+		</div>
+	</form>
+</block>

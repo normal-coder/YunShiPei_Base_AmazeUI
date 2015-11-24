@@ -1,0 +1,68 @@
+<extend name="Public:common" />
+<block name="content">
+	<div class="am-cf am-padding">
+		<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">客户案例管理</strong> / <small>Case Manager</small></div>
+	</div>
+
+	<div class="am-g">
+
+	</div>
+
+	<div class="am-g">
+		<div class="am-u-sm-12">
+			<form class="am-form">
+				<table class="am-table am-table-striped am-table-hover table-main">
+					<thead>
+						<tr>
+							<th class="table-check">
+								<input type="checkbox" />
+							</th>
+							<th class="table-id">ID</th>
+							<th class="table-title">站点名称</th>
+							<th class="table-type">站点地址</th>
+							<th class="table-author am-hide-sm-only">站点图片</th>
+							<th class="table-author am-hide-sm-only">状态</th>
+							<th class="table-set">操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<volist name="linklist" id="vo">
+							<tr>
+								<td>
+									<input type="checkbox" />
+								</td>
+								<td>{: $vo['idd'] }</td>
+								<td>{: $vo['sitename'] }</td>
+								<td><a href="{: $vo['siteurl'] }">{: $vo['siteurl'] }</a></td>
+								<td><img src="__PUBLIC__/Upload/cast/{: $vo['siteimg'] }" style="height:60px" alt=""></td>
+								<td class="am-hide-sm-only">{: checkStatus($vo['status']) }</td>
+								<td>
+									<div class="am-btn-toolbar">
+										<div class="am-btn-group am-btn-group-xs">
+											<button class="am-btn am-btn-default am-btn-xs am-text-secondary" onclick="location.href='{: U('edit',array('id'=>$vo['id'])) }';return false;">
+													<span class="am-icon-pencil-square-o"></span> 编辑
+											</button>
+											<if condition="$vo['status'] eq 1">
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only" onclick="location.href='{: U('changeStatus',array('id'=>$vo['id']))}';return false;">
+													<span class="am-icon-copy"></span> 禁用
+												</button>
+											<else />
+												<button class="am-btn am-btn-default am-btn-xs am-hide-sm-only" onclick="location.href='{: U('changeStatus',array('id'=>$vo['id']))}';return false;">
+													<span class="am-icon-copy"></span> 启用
+												</button>
+											</if>
+											<button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only"  onclick="location.href='{: U('del',array('id'=>$vo['id']))}';return false;">
+												<span class="am-icon-trash-o"></span> 删除
+											</button>
+										</div>
+									</div>
+								</td>
+							</tr>
+						</volist>
+					</tbody>
+				</table>
+			</form>
+		</div>
+
+	</div>
+</block>

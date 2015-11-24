@@ -1,0 +1,42 @@
+<extend name="Public:common" />
+<block name="content">
+	<div class="am-cf am-padding">
+		<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">账号管理</strong> / <small>密码修改</small></div>
+	</div>
+	<form class="am-form" action="{: U('passwd') }" method="POST">
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				原密码
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="oldpassword">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　　</div>
+		</div>
+
+
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				新密码
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="newpassword">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">　
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<button type="submit" class="am-btn am-btn-primary am-btn-xs">修改密码</button>
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+		<div class="am-g am-margin-top">
+			<p>　</p>
+			<p>　</p>
+			<p>　</p>
+		</div>
+	</form>
+</block>

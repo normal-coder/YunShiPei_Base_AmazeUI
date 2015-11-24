@@ -1,0 +1,136 @@
+<extend name="Public:common" />
+<block name="main">
+
+<!-- banner -->
+<div class="other-banner-mod am-vertical-align">
+    <div class="am-vertical-align-middle">
+      <h1>选择最适合你的云适配服务</h1>
+      <h2>免费自助，付费定制</h2>
+      <h3>400-069-0309</h3>
+    </div>
+</div>
+
+<!-- 表格 -->
+<div class="pricing-con module-wrap no-borderb">
+  <div class="am-container">
+    <div class="plans-free am-u-md-6 am-u-sm-12">
+      <div class="free-title">
+          <span>免 费</span>
+      </div>
+      <table>
+        <tr>
+          <td><p>自助使用工具</p></td>
+        </tr>
+        <tr>
+          <td>适配工具使用</td>
+        </tr>
+        <tr>
+          <td>社区支持</td>
+        </tr>
+        <tr>
+          <td>后台基本功能</td>
+        </tr>
+        <tr>
+          <td>云加速</td>
+        </tr>
+        <tr>
+          <td>统计服务</td>
+        </tr>
+        <tr>
+          <td>直达号申请</td>
+        </tr> 
+        <tr></tr>
+        <tr>
+          <td class="free-use"><a href="http://platform.yunshipei.com/signup#!/" target="_blank" class="plans-btn">立即使用</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="plans-pay am-u-md-6 am-u-sm-12">
+      <div class="pay-title">
+        <span>付费</span>
+      </div>
+      <table>
+        <tr>
+          <td>
+            <p>由官方服务商提供定制服务</p>
+            <span>400-069-0309</span>
+          </td>
+        </tr>
+        <tr>
+          <td>适配所有主流智能手机</td>
+        </tr>
+        <tr>
+          <td>设计师定制设计</td>
+        </tr>
+        <tr>
+          <td>云加速（图片压缩及CDN加速功能）</td>
+        </tr>
+        <tr>
+          <td>统计服务（包含订阅服务）</td>
+        </tr>
+        <tr>
+          <td>7×24小时服务支持</td>
+        </tr>
+        <tr>
+          <td>百度直达号申请</td>
+        </tr>
+        <tr>
+            <td>封装APP</td>
+        </tr>
+        <tr>
+          <td class="pricing-cus"><a href="javascript: void(0)" id="btn-formulate-btn" data-reverse="0" class="plans-btn">我要定制</a></td>
+        </tr>
+      </table>
+    </div>
+    <!-- 定制弹出框 -->
+    <div class="am-modal am-modal-no-btn" tabindex="-1" id="formulate">
+      <div class="am-modal-dialog">
+        <div class="am-modal-hd">
+          填写您的定制需求
+          <a href="javascript: void(0)" class="am-close am-close-spin" data-am-modal-close>&times;</a>
+        </div>
+          <div class="am-modal-bd">
+            <form action="" id="priceFrom">
+                <div class="input-row">
+                    <label for="formulate-name">姓名(必填)</label>
+                    <input type="text" name="formulate-name" id="formulate-name" placeholder="您的姓名" required/>
+                </div>
+                <div class="input-row">
+                    <label for="formulate-phone">电话(必填)</label>
+                    <input type="phone" name="formulate-phone" id="formulate-phone" placeholder="您的手机或座机号码（示例：023-56578990）" required/>
+                </div>
+                <div class="input-row">
+                      <label for="formulate-url">网址（必填）</label>
+                      <input type="url" name="formulate-url" id="formulate-url" placeholder="示例：http://www.abc.com" required/>
+                </div>
+                <div class="input-row">
+                    <label for="formulate-area">地区（必填）</label>
+                    <input type="text" name="formulate-area" id="formulate-area" placeholder="您所在的区域" required/>
+                </div>
+                <div class="input-row">
+                      <label for="formulate-remark">备注（选填）</label>
+                      <textarea class="formulate-remark" name="formulate-remark" id="formulate-remark" cols="30" rows="6"
+                          placeholder="备注"></textarea>
+                </div>
+                <div class="price-form-ft">
+                    <input type="submit" class="submit-btn submit-btn-style" value="提交"/>
+                    <span class="phone"><i class="am-icon-phone"></i>400-069-0309</span>
+                    <div class="ajax-tips"></div>
+                </div>
+            </form>
+            <div class="submit-success-mod">
+                <h2>提交成功！</h2>
+                <p>我们的工作人员将尽快与您取得联系。</p>
+            </div>
+            <div class="submit-error-mod">
+                <h2>提交失败！</h2>
+                <p>请返回重新填写相关项目！</p>
+                <a href="" class="return-btn submit-btn-style">返回</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</block>

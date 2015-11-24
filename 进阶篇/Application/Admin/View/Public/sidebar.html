@@ -1,0 +1,66 @@
+<div class="am-cf admin-main">
+	<!-- sidebar start -->
+	<div class="admin-sidebar am-offcanvas" id="admin-offcanvas">
+		<div class="am-offcanvas-bar admin-offcanvas-bar">
+			<ul class="am-list admin-sidebar-list">
+				<li>
+					<a href="{: U('Index/index')}">
+						<span class="am-icon-home"></span> 首页
+					</a>
+				</li>
+				<li>
+					<a href="{: U('Agent/getlist')}">
+						<span class="am-icon-users"></span> 代理商管理
+					</a>
+				</li>
+				<li class="admin-parent">
+					<a class="am-cf" data-am-collapse="{target: '#collapse-nav'}">
+						<span class="am-icon-users"></span> 客户案例管理
+						<span class="am-icon-angle-right am-fr am-margin-right"></span>
+					</a>
+					<ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav">
+						<li>
+							<a href="{: U('CaseManager/add')}" class="am-cf">
+								<span class="am-icon-plus"></span> 新增案例
+							</a>
+						</li>
+						<li>
+							<a href="{: U('CaseManager/getlist')}" class="am-cf">
+								<span class="am-icon-list"></span> 案例列表
+							</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<a href="{: U('FriendLink/index')}">
+						<span class="am-icon-users"></span> 友情链接管理
+					</a>
+				</li>
+				<li>
+					<a href="{: U('Site/config')}">
+						<span class="am-icon-cog"></span> 站点设置
+					</a>
+				</li>
+			</ul>
+
+			<div class="am-panel am-panel-default admin-sidebar-panel">
+				<div class="am-panel-bd">
+					<p><span class="am-icon-bookmark"></span> 当前系统时间</p>
+					<p>
+						<?php echo date('Y-m-d H:i:s', strtotime('now')); ?> <br/>
+					</p>
+				</div>
+			</div>
+			<!-- <div class="am-panel am-panel-default admin-sidebar-panel">
+				<div class="am-panel-bd">
+					<p><span class="am-icon-bookmark"></span> 公告</p>
+					<p>时光静好，与君语；细水流年，与君同。—— Amaze UI</p>
+				</div>
+			</div> -->
+
+		</div>
+	</div>
+	<!-- sidebar end -->
+
+	<!-- content start -->
+	<div class="admin-content">

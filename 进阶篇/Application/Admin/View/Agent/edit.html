@@ -1,0 +1,98 @@
+<extend name="Public:common" />
+<block name="content">
+	<div class="am-cf am-padding">
+		<div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">代理商管理</strong> / <small>编辑</small></div>
+	</div>
+	<form class="am-form" action="{: U('edit')}" method="POST">
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				姓名
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="hidden" class="am-input-sm" name="id" value="{: $agentMess['id'] }">
+				<input type="text" class="am-input-sm" name="name" value="{: $agentMess['name'] }">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				手机号码
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="telephone" value="{: $agentMess['telephone'] }">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				QQ号码
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="qq" value="{: $agentMess['qq'] }">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				电子邮件
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="email" value="{: $agentMess['email'] }">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				城市
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="city" value="{: $agentMess['city'] }">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				公司
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="company" value="{: $agentMess['company'] }">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				公司网址
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<input type="text" class="am-input-sm" name="url" value="{: $agentMess['url'] }">
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">　</div>
+		</div>
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				公司简介
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<textarea class="" rows="5" id="user-intro"　name="introduct">{: $agentMess['introduct'] }</textarea>
+			</div>
+			<div class="am-hide-sm-only am-u-md-6"></div>
+		</div>
+
+
+
+
+		<div class="am-g am-margin-top">
+			<div class="am-u-sm-4 am-u-md-2 am-text-right">
+				　
+			</div>
+			<div class="am-u-sm-8 am-u-md-4">
+				<button type="submit" class="am-btn am-btn-primary am-btn-xs">提交保存</button>
+			</div>
+			<div class="am-hide-sm-only am-u-md-6">
+				<p>
+					　
+				</p>
+			</div>
+		</div>
+	</form>
+</block>
