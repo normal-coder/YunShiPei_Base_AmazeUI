@@ -3,5 +3,5 @@
 ####后台进阶篇视频教程：http://edu.yuantuan.com/course/132
 ---
 
-###个人Blog：[诺墨的自留地](http://www.normalcoder.com/)
+###个人网站：[诺墨的自留地](http://www.normalcoder.com/)
 ###新浪微博：[@诺墨-](http://weibo.com/normal1017)
